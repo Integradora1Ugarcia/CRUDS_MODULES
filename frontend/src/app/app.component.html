@@ -1,0 +1,23 @@
+<nav>
+  <div class="nav-wrapper blue-grey">
+      <a href="#!" class="brand-logo">Muelle 13</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+          <li><a href="">Inicio</a></li>
+          <li><a routerLink="/employees" routerLinkActive="active">Employees</a></li>
+          <li><a routerLink="/users" routerLinkActive="active">User</a></li>
+          <li><a routerLink="/schedules" routerLinkActive="active">Agenda Interna</a></li>
+          <li><a routerLink="/pcs" routerLinkActive="active">Pcs</a></li>
+      </ul>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="">Inicio</a></li>
+  <li><a routerLink="/employees" routerLinkActive="active">employees</a></li>
+  <li><a routerLink="/users" routerLinkActive="active">Users</a></li>
+  <li><a routerLink="/schedules" routerLinkActive="active">Agenda</a></li>
+  <li><a routerLink="/pcs" routerLinkActive="active">Pcs</a></li>
+</ul>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Frontend</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Compiled and minified CSS -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+</head>
+
+<body>
+  <app-root></app-root>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let sidenav = document.querySelectorAll('.sidenav');
+      let instancia_sidenav = M.Sidenav.init(sidenav, {});
+      let dropdowns = document.querySelectorAll('.dropdown-trigger');
+      let instancia_dropwdown = M.Dropdown.init(dropdowns, {
+        hover: false
+      });
+    });
+
+
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".datepicker").pickadate({
+        closeOnSelect: true,
+        format: "dd/mm/yyyy"
+      });
+    });
+
+  </script>
+
+
+
+</body>
+
+</html>
